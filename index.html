@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Taskr | SlashRy</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <div>
+          <input
+            type="text"
+            id="taskInput"
+            size="40"
+            placeholder="I have to..."
+          />
+          <button id="confirmTask">Add</button>
+        </div>
+        <div class="tasks">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="reset">Reset</button>
+      <a href="javascript:void(0)" id="slideBtn" title="Color Panel"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-palette"
+          width="92"
+          height="92"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#999999"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25"
+          />
+          <circle cx="7.5" cy="10.5" r=".5" fill="currentColor" />
+          <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
+          <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" /></svg
+      ></a>
+    </div>
+    <div class="bottomSlider">
+      <label for="color">Choose a color!</label>
+      <input type="color" id="color" value="#b9713d" />
+      <button id="swapColor">Swap</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
