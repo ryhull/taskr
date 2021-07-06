@@ -10,7 +10,8 @@ var color = document.querySelector("#color").value;
 addBtn.addEventListener("click", addTask);
 delAll.addEventListener("click", deleteAll);
 swapBtn.addEventListener("click", colorSwap);
-slideBtn.addEventListener("click", slidePanel);
+swapBtn.addEventListener("click", openCloseColorModal);
+slideBtn.addEventListener("click", openCloseColorModal);
 
 function addTask() {
   if (input.value == "") {
@@ -57,14 +58,12 @@ function deleteAll() {
 }
 
 //Open or close the color panel
-function slidePanel() {
-  if (bottomSlider.style.width == "") {
-    bottomSlider.style.width = "250px";
+function openCloseColorModal() {
+  if (bottomSlider.style.opacity == "") {
     bottomSlider.style.opacity = "1"
     slideBtn.title = "Close Color Panel";
-  } else if (bottomSlider.style.width == "250px") {
-    bottomSlider.style.width = "";
-    bottomSlider.style.opacity = "0"
+  } else if (bottomSlider.style.opacity = "1") {
+    bottomSlider.style.opacity = ""
     slideBtn.title = "Open Color Panel";
   }
 }
